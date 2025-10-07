@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Great_Vibes as GreatVibes } from "next/font/google";
 import { DM_Serif_Text as DmSerif } from "next/font/google"; 
+import Link from "next/link";
 import { Fredoka } from "next/font/google";
 import satu from "../assets/satu.jpg";
 import dua from "../assets/dua.jpg";
@@ -62,14 +63,14 @@ export default function Buddies() {
         <h1 className="font-bold text-2xl">✮⋆˙ Lika Sweet Seventeen!!</h1>
         <ul className="flex space-x-5">
           <li className="font-semibold text-xl">
-            <a href="/" className="hover:text-[#FFFFEB]">
+            <Link href="/" className="hover:text-[#FFFFEB]">
               Home
-            </a>
+            </Link>
           </li>
           <li className="font-semibold text-xl">
-            <a href="/gallery" className="hover:text-[#FFFFEB]">
+            <Link href="/gallery" className="hover:text-[#FFFFEB]">
               Gallery
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
