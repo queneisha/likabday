@@ -23,10 +23,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+   <html lang="en">
+    <body>
+        {/* Audio global (tidak berhenti saat pindah halaman) */}
+        <audio
+          autoPlay
+          loop
+          controls
+          id="bg-music"
+          className="fixed bottom-4 left-4 z-50 opacity-80"
+        >
+          <source src="/music/lagu.mp3" type="audio/mpeg" />
+          Browser kamu tidak mendukung audio.
+        </audio>
+
         {children}
       </body>
     </html>

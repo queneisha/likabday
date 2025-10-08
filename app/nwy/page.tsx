@@ -5,7 +5,9 @@ import Image from "next/image";
 import { Great_Vibes as GreatVibes } from "next/font/google";
 import { DM_Serif_Text as DmSerif } from "next/font/google"; 
 import { Fredoka } from "next/font/google";
+import Balloons from "../balloons";
 import lika from "../assets/lika.jpg"
+import bebk from "../assets/bebk.png"
 
 const fredoka = Fredoka({
   weight: ["400", "600"],
@@ -51,6 +53,7 @@ export default function Nwy() {
       </nav>
 
       {/* Hero Section */}
+      <Balloons/>
        <main className="flex flex-col items-center bg-[#FFFFEB] min-h-screen px-10 py-20 pt-32">
   {/* Teks tengah */}
   <h1
@@ -59,6 +62,24 @@ export default function Nwy() {
   >
     𖹭 HAPPY BIRTHDAYY!! 𖹭
   </h1>
+
+{/* Gambar kiri */}
+  <Image
+    src={bebk}
+    alt="decor left"
+    width={200}
+    height={200}
+    className="absolute left-0 top-1/2 transform -translate-y-1/2 opacity-80"
+  />
+
+   {/* Gambar kanan */}
+  <Image
+    src={bebk}
+    alt="decor right"
+    width={200}
+    height={200}
+    className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-80"
+  />
 
   {/* Bagian Foto + Message */}
   <div className="flex flex-col md:flex-row items-start md:items-stretch gap-6">

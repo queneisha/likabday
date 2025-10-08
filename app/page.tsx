@@ -6,6 +6,7 @@ import { Great_Vibes as GreatVibes } from "next/font/google";
 import { DM_Serif_Text as DmSerif } from "next/font/google"; 
 import { Fredoka } from "next/font/google";
 import Link from "next/link";
+import Balloons from "./balloons";
 
 const fredoka = Fredoka({
   weight: ["400", "600"],
@@ -50,39 +51,52 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
+      <Balloons />
       <main className="flex flex-col md:flex-row justify-between items-center bg-[#FFFFEB] min-h-screen px-10 py-20 pt-32">
       
-      {/* Left Side Text */}
+        {/* Left Side Text */}
         <div className="md:w-1/2 text-center md:text-center space-y-2">
-          <h1 className={`${dmSerif.className} text-6xl md:text-8xl font-bold text-[#6B3E26] drop-shadow-[2px_2px_0px_#ffffff]`} 
-          style={{ WebkitTextStroke: "2px #6B3E26", color: "#D0E0EB" }}>
+          <h1
+            className={`${dmSerif.className} text-6xl md:text-8xl font-bold text-[#6B3E26] drop-shadow-[2px_2px_0px_#ffffff]`} 
+            style={{ WebkitTextStroke: "2px #6B3E26", color: "#D0E0EB" }}
+          >
             Happy
           </h1>
-          <h1 className={`${greatVibes.className} text-7xl md:text-9xl text-[#6B3E26]`} 
-          style={{ WebkitTextStroke: "2px #6B3E26", color: "#FFFFFF" }}>
+          <h1
+            className={`${greatVibes.className} text-7xl md:text-9xl text-[#6B3E26]`} 
+            style={{ WebkitTextStroke: "2px #6B3E26", color: "#FFFFFF" }}
+          >
             Birthday
           </h1>
-          <h1 className={`${dmSerif.className} text-6xl md:text-8xl font-bold text-[#6B3E26]`} 
-          style={{ WebkitTextStroke: "2px #6B3E26", color: "#FFEFF2" }}>
+          <h1
+            className={`${dmSerif.className} text-6xl md:text-8xl font-bold text-[#6B3E26]`} 
+            style={{ WebkitTextStroke: "2px #6B3E26", color: "#FFEFF2" }}
+          >
             Zalika!
           </h1>
           <p className={`${fredoka.className} text-lg md:text-xl mt-4 text-[#000000]`}>
             From Anjazz
           </p>
           <Link href="/ucapan">
-          <button
-            className={`${fredoka.className} mt-2 px-6 py-3 bg-[#E6EEF3] hover:bg-[#D0E0EB] text-[#000000] rounded-md shadow`}
-          >
-            Klik woy
-          </button>
+            <button
+              className={`${fredoka.className} mt-2 px-6 py-3 bg-[#E6EEF3] hover:bg-[#D0E0EB] text-[#000000] rounded-md shadow`}
+            >
+              Klik woy
+            </button>
           </Link>
         </div>
 
-      {/* Right Side Image */}
+        {/* Right Side Image */}
         <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <Image src={cake} alt="Birthday Cake" width={400} height={400} className="drop-shadow-md" />
         </div>
       </main>
+
+      {/* Background Music */}
+      <audio autoPlay loop controls className="hidden md:block fixed bottom-4 left-4 z-50">
+        <source src="/music/lagu.mp3" type="audio/mpeg" />
+        Browser kamu tidak mendukung elemen audio.
+      </audio>
 
       <footer className="bg-[#D6E4EB] text-center p-4 text-black">
         <p className={`${fredoka.className} text-md`}>

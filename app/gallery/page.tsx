@@ -3,6 +3,9 @@ import React from "react";
 import { Great_Vibes as GreatVibes } from "next/font/google";
 import Link from "next/link";
 import { Fredoka } from "next/font/google";
+import Balloons from "../balloons";
+import { DM_Serif_Text as DmSerif } from "next/font/google";
+
 import satu from "../assets/satu.jpg";
 import dua from "../assets/dua.jpg";
 import tiga from "../assets/tiga.jpg";
@@ -42,6 +45,12 @@ const greatVibes = GreatVibes({
   subsets: ["latin"],
 });
 
+const dmSerif = DmSerif({
+  weight: "400",
+  style: ["italic", "normal"],
+  subsets: ["latin"],
+});
+
 export default function Buddies() {
   return (
     <div>
@@ -69,6 +78,7 @@ export default function Buddies() {
       </nav>
 
         {/* Hero Section */}
+        <Balloons/>
          <main className="flex flex-col items-center bg-[#FFFFEB] min-h-screen pt-4">
     <div className="flex flex-col items-center  min-h-screen px-10 py-20 w-full">
         <h1 className="text-3xl font-bold mb-2 text-center text-[#5C4033]">
