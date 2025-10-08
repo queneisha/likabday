@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Great_Vibes as GreatVibes } from "next/font/google";
 import { DM_Serif_Text as DmSerif } from "next/font/google"; 
 import { Fredoka } from "next/font/google";
-import lika from "../assets/lika.jpg"
+import wika from "../assets/wika.jpg"
 
 const fredoka = Fredoka({
   weight: ["400", "600"],
@@ -65,8 +65,8 @@ export default function Ling() {
     {/* Foto */}
     <div className="bg-[#FFEFF2] p-2 rounded-lg border-2 border-[#5C4033] flex-shrink-0">
       <Image
-        src={lika} 
-        alt="Lika"
+        src={wika} 
+        alt="Zalikaa"
         width={300}
         height={300}
         className="rounded-md"
@@ -85,8 +85,7 @@ export default function Ling() {
         <span className="font-bold italic">Message:</span>
       </p>
       <p className="text-black mt-3">
-        Happy Birthday Likaaaa!! Panjang umur, sehat selalu bebs, tambah pintar ye, tambah ambis likk jan gak ambis lu, tambah tua eak, 
-        blajar bwa motor cpat gw capek hrus bwa motor bahh, sekalian request itu dedeknya boleh??
+        habede 17 bungsu, semoga tambah dewasah dan semoga yang disemogakan tersemogakan
       </p>
     </div>
   </div>

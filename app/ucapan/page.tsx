@@ -5,6 +5,7 @@ import { Great_Vibes as GreatVibes } from "next/font/google";
 import { DM_Serif_Text as DmSerif } from "next/font/google"; 
 import { Fredoka } from "next/font/google";
 import Link from "next/link";
+
 import bren from "../assets/bren.jpg";
 import nwy from "../assets/nwy.jpg";
 import ling from "../assets/ling.jpg";
@@ -39,14 +40,14 @@ export default function Ucapan() {
         <h1 className="font-bold text-2xl">✮⋆˙ Lika Sweet Seventeen!!</h1>
         <ul className="flex space-x-5">
           <li className="font-semibold text-xl">
-            <a href="/" className="hover:text-[#FFFFEB]">
+            <Link href="/" className="hover:text-[#FFFFEB]">
               Home
-            </a>
+            </Link>
           </li>
           <li className="font-semibold text-xl">
-            <a href="/gallery" className="hover:text-[#FFFFEB]">
+            <Link href="/gallery" className="hover:text-[#FFFFEB]">
               Gallery
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -60,6 +61,7 @@ export default function Ucapan() {
             <h2 className={`${fredoka.className} text-xl font-semibold mb-2 text-[#5C4033] text-center`}>Habede bungsuu, ciehhh tambah tua lu! 
            <br/> 17!17!17!</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       
         {/* Card 1 */}
         <div className="bg-[#FFEFF2] rounded-lg shadow-md p-6 max-w-sm border-2 border-[#5C4033] flex flex-col items-center">
           <Image src={ling} alt="Angeline" width={400} height={200} className="rounded-md mb-4"/>

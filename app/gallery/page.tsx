@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { Great_Vibes as GreatVibes } from "next/font/google";
-import { DM_Serif_Text as DmSerif } from "next/font/google"; 
 import Link from "next/link";
 import { Fredoka } from "next/font/google";
 import satu from "../assets/satu.jpg";
@@ -35,12 +34,6 @@ import Head from "next/head";
 
 const fredoka = Fredoka({
   weight: ["400", "600"],
-  subsets: ["latin"],
-});
-
-const dmSerif = DmSerif({
-  weight: "400",
-  style: ["italic", "normal"],
   subsets: ["latin"],
 });
 
